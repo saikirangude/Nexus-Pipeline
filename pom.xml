@@ -7,12 +7,18 @@
   <version>1.0-SNAPSHOT</version>
   <name>trucks Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <distributionManagement>
-  <snapshotRepository>
-  <id>nexus</id>
-  <name>nexus</name>
-  <url>dav:http://107.23.213.174:8081/repository/leaf_spring3/</url>
- </snapshotRepository>
+
+  <distribution<repository>
+  <id>releases</id>
+  <name>maven-releases</name>
+  <url>dav:http://107.23.213.174:8081/repository/maven-releases/</url>
+ </repository>Management>
+
+ <snapshotRepository>
+  <id>snapshots</id>
+  <name>maven-snapshots</name>
+  <url>dav:http://107.23.213.174:8081/repository/maven-snapshots/</url>
+</snapshotRepository>
 </distributionManagement>
   <dependencies>
     <dependency>
